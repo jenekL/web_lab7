@@ -5,5 +5,5 @@ export default {
     const response = await api().get('/article/getAll');
 
     return response.data;
-  }
+  },
 }
