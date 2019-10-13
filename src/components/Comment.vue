@@ -1,7 +1,9 @@
 <template>
-   <p>{{comment.user}}</p>
-    <p>{{comment.text}}</p>
-     <p>{{comment.date}}</p>
+    <div id="comment">
+        <p>{{comment.user}}</p>
+        <p>{{comment.text}}</p>
+        <p>{{comment.date}}</p>
+    </div>
 </template>
 
 <script>
@@ -14,5 +16,7 @@
 </script>
 
 <style scoped>
-  
+#comment{
+    font-size: 10px;
+}
 </style>
