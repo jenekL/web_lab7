@@ -1,5 +1,9 @@
 <template>
-   <p>{{comment}}</p>
+    <div id="comment">
+        <p>{{comment.user}}</p>
+        <p>{{comment.text}}</p>
+        <p>{{comment.date}}</p>
+    </div>
 </template>
 
 <script>
@@ -12,18 +16,7 @@
 </script>
 
 <style scoped>
-    h3 {
-        margin: 40px 0 0;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-    a {
-        color: #42b983;
-    }
+#comment{
+    font-size: 10px;
+}
 </style>
