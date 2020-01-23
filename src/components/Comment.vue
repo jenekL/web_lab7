@@ -33,4 +33,9 @@
     p {
       padding-top: 0.4em;
     }
+
+#comment{
+    font-size: 10px;
+}
+
 </style>
