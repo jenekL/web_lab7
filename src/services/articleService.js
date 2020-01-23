@@ -6,10 +6,12 @@ export default {
 
     return response.data;
   },
-  async addArticle () {
-    const response = await api().post('/article/add');
+  async addArticle (name, author, text) {
+    const response = await api().post(`/article/add?name=${name}&author=${author}&text=${text}&date=${new Date()}`);
+    return response.data;
   },
-  async addComment (postId) {
-    const response = await api().post(`/comment/add?articleId=${postId}`);
+  async addComment (postId, comment) {
+    const response = await api().post(`/comments/add?postId=${postId}&text=${comment}&user=Jenya&date=${new Date()}`);
+    return response.data;
   },
 }
